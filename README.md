@@ -1,12 +1,28 @@
-# ML-Project-2022
-This is my project for the Machine Learning course at Aalto University.
 
-The aim of this project is to predict the total in-game users for Apex Legends from the total online users of Steam on a specific Date
+Introduction
 
-Most of the codes are processed on jupyter hub
+Apex Legends is one of the most popular games on the Internet. As an Apex Enjoyer myself, I decided to apply various machine learning models to predict the concurrent ingame players based on Steam's concurrent users
+The reasoning behind this project besides my love for the game is that the in-game player count might fluctuate drastically, impacting the server performance, thus, predicting when these fluctuations happen will help manage the server better.
 
-Included in the project are my report throughout the project stages
+Data
+The data used in this project was collected from steamDB, and Steam's game page tab. The dataset includes information on the concurrent users and concurrent in-game players by date.
 
-It also included the Steam.csv, which contains the data for Apex Legends including current users on Steam and in-game users.
+Methodology
+I used various machine learning techniques, including Linear Regression and Polynomial Regression to build a model that predicts in-game players based on Steam user count. I also performed various data cleaning and feature selection to improve the model's performance.
 
-It also includes a .ipynb file where all the codes to clean, process and draw different graphs are contained.
+Result
+The chosen model achieved errors of roughly 15% for both training and validation, thus, the model can accurately predict with more than 80% accuracy.
+
+Conclusion
+My model try to predict the in-game players for Apex Legends based on Steam's concurrent users. The model achieved just that with a relatively hight accuracy level, but this does not means that it cannot be improved further with more data and techniques.
+
+Requirements
+The code for this project was written in Python 3.8 and requires the following libraries:
+
+Pandas
+Numpy
+Sklearn
+Matplotlib
+
+Usage
+To run the code for this project, clone the repository and run the Jupyter Notebook file.
